@@ -20,8 +20,3 @@ mongoose.connect(config.url,  { useNewUrlParser: true })
     })
     // If it does not connect correctly we throw the error
     .catch(err => console.log(err));
-
-// Defining a simple route
-app.get('/', (req, res) => {
-    res.json({"message": "Welcome to Oiga Technologies API Rest, this is my technical test. Francisco Vélásquez Escobar."});
-});
