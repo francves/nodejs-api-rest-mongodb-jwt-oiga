@@ -2,18 +2,21 @@
 
 const express = require('express')
 // We loaded the controllers
-const controllerProduct = require('../controllers/product');
-const controllerOrders = require('../controllers/order');
+const controllerProduct = require('../controllers/product')
+const controllerOrders = require('../controllers/order')
+const controllerUsers = require('../controllers/user')
 const api = express.Router()
 // Parameters
-const pathProducts = '/products';
-const idProduct = ':productId';
-const pathOrders = '/orders';
-const idOrders = ':orderId';
+const pathProducts = '/products'
+const idProduct = ':productId'
+const pathOrders = '/orders'
+const idOrders = ':orderId'
+//Middlewares
+const auth = require('../middlewares/auth')
 
 //PRODUCTS ROUTES
 //Retrieve all products
-api.get(`${pathProducts}`, controllerProduct.findAll)
+api.get(`${pathProducts}`, auth.isAuth, controllerProduct.findAll)
 // Retrieve a single product with productId
 api.get(`${pathProducts}/${idProduct}`, controllerProduct.findOne)
 //Create a new product
@@ -34,5 +37,9 @@ api.post(`${pathOrders}`, controllerOrders.create)
 api.put(`${pathOrders}/${idOrders}`, controllerOrders.update)
 // Delete a order with orderId
 api.delete(`${pathOrders}/${idOrders}`, controllerOrders.delete)
+
+//USER ROUTES
+api.post('/signup', controllerUsers.signUp) //Register User
+api.post('/signin', controllerUsers.signIn) //Login User
 
 module.exports = api

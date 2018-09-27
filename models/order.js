@@ -1,10 +1,10 @@
 'use strict'
 // We load the mongoose module
-var mongoose =  require('mongoose');
+const mongoose =  require('mongoose');
 // We will use the schemes
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 // We create the object of the scheme and its attributes
-var OrderSchema = Schema({
+const OrderSchema = Schema({
     name: String,
     price: String,
 }, {
