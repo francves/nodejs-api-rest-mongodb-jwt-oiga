@@ -22,23 +22,23 @@ api.get(`${pathProducts}`, auth.isAuth, controllerProduct.findAll) //Admin and C
 // Retrieve a single product with productId
 api.get(`${pathProducts}/${idProduct}`, auth.isAuth, controllerProduct.findOne) //Admin and Company can look and list products
 //Create a new product
-api.post(`${pathProducts}`, verifyAdmin.isAdmin, controllerProduct.create) //Admin can create products
+api.post(`${pathProducts}`, auth.isAuth, verifyAdmin.isAdmin, controllerProduct.create) //Admin can create products
 //Update a product with productId
-api.put(`${pathProducts}/${idProduct}`, verifyAdmin.isAdmin, controllerProduct.update) //Admin can update products
+api.put(`${pathProducts}/${idProduct}`, auth.isAuth, verifyAdmin.isAdmin, controllerProduct.update) //Admin can update products
 // Delete a product with productId
-api.delete(`${pathProducts}/${idProduct}`, verifyAdmin.isAdmin, controllerProduct.delete) //Admin can delete products
+api.delete(`${pathProducts}/${idProduct}`, auth.isAuth, verifyAdmin.isAdmin, controllerProduct.delete) //Admin can delete products
 
 //ORDERS ROUTES
 //Retrieve all orders
-api.get(`${pathOrders}`, verifyAdmin.isAdmin, controllerOrders.findAll) //Admin can list orders
+api.get(`${pathOrders}`, auth.isAuth, verifyAdmin.isAdmin, controllerOrders.findAll) //Admin can list orders
 // Retrieve a single order with orderId
-api.get(`${pathOrders}/${idOrders}`, verifyCompany.isCompany, controllerOrders.findOne) //Company can list orders that belong to it
+api.get(`${pathOrders}/${idOrders}`, auth.isAuth, verifyCompany.isCompany, controllerOrders.findOne) //Company can list orders that belong to it
 //Create a new order
-api.post(`${pathOrders}`, verifyCompany.isCompany, controllerOrders.create) //Company can create orders
+api.post(`${pathOrders}`, auth.isAuth, verifyCompany.isCompany, controllerOrders.create) //Company can create orders
 //Update a order with orderId
-api.put(`${pathOrders}/${idOrders}`, verifyAdmin.isAdmin, controllerOrders.update) //Admin can update orders
+api.put(`${pathOrders}/${idOrders}`, auth.isAuth, verifyAdmin.isAdmin, controllerOrders.update) //Admin can update orders
 // Delete a order with orderId
-api.delete(`${pathOrders}/${idOrders}`, verifyAdmin.isAdmin, controllerOrders.delete) //Admin can delete orders
+api.delete(`${pathOrders}/${idOrders}`, auth.isAuth, verifyAdmin.isAdmin, controllerOrders.delete) //Admin can delete orders
 
 //USER ROUTES
 api.post('/signup', controllerUsers.signUp) //Register User

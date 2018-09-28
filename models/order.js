@@ -5,8 +5,11 @@ const mongoose =  require('mongoose');
 const Schema = mongoose.Schema;
 // We create the object of the scheme and its attributes
 const OrderSchema = Schema({
-    name: String,
-    price: String,
+    userId: String,
+    productId: String,
+    quantity: Number,
+    totalAmount: Number,
+
 }, {
 	timestamps: true //For createAt and updateAt
 });
