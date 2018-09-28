@@ -11,6 +11,7 @@ const pathProducts = '/products'
 const idProduct = ':productId'
 const pathOrders = '/orders'
 const idOrders = ':orderId'
+const idUser = ':userId' // For the requirement to list orders that belong only to that company
 //Middlewares
 const auth = require('../middlewares/auth')
 const verifyAdmin = require('../middlewares/verifyadmin')
@@ -31,8 +32,8 @@ api.delete(`${pathProducts}/${idProduct}`, auth.isAuth, verifyAdmin.isAdmin, con
 //ORDERS ROUTES
 //Retrieve all orders
 api.get(`${pathOrders}`, auth.isAuth, verifyAdmin.isAdmin, controllerOrders.findAll) //Admin can list orders
-// Retrieve a single order with orderId
-api.get(`${pathOrders}/${idOrders}`, auth.isAuth, verifyCompany.isCompany, controllerOrders.findOne) //Company can list orders that belong to it
+//Retrieve orders that belong to the user with the id
+api.get(`${pathOrders}/${idUser}`, auth.isAuth, verifyCompany.isCompany, controllerOrders.findOne) //Company can list orders that belong to it (idUser)
 //Create a new order
 api.post(`${pathOrders}`, auth.isAuth, verifyCompany.isCompany, controllerOrders.create) //Company can create orders
 //Update a order with orderId

@@ -42,24 +42,24 @@ exports.findAll = (req, res) => {
     });
 };
 
-// Find a single order with a orderId
+// Find orders that belong to the user with the id
 exports.findOne = (req, res) => {
-    orderModel.findById(req.params.orderId)
+    orderModel.find({userId: req.params.userId})
     .then(order => {
         if(!order) {
             return res.status(404).send({
-                message: "Order not found with id " + req.params.orderId
+                message: "Order not found with user id " + req.params.userId
             });            
         }
         res.send(order);
     }).catch(err => {
         if(err.kind === 'ObjectId') {
             return res.status(404).send({
-                message: "Order not found with id " + req.params.orderId
+                message: "Order not found with user id " + req.params.userId
             });                
         }
         return res.status(500).send({
-            message: "Error retrieving order with id " + req.params.orderId
+            message: "Error retrieving order with user id " + req.params.userId
         });
     });
 };
