@@ -8,13 +8,13 @@ const api = require('./routes')
 
 
 // We configure bodyParser to convert the body of our requests to JSON
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
 
 app.use('/api', api)
 // Defining a simple route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to Oiga Technologies API Rest, this is my technical test. Francisco Vélásquez Escobar."});
-});
+	res.json({'message': 'Welcome to Oiga Technologies API Rest, this is my technical test. Francisco Vélásquez Escobar.'})
+})
 // We export this module to be able to use the app variable outside of this file
-module.exports = app;
+module.exports = app

@@ -3,18 +3,18 @@
 const services = require('../services')
 
 exports.isAuth = (req, res, next) => {
-  if (!req.headers.authorization) {
-    return res.status(403).send({ message: 'You do not have authorization' })
-  }
+	if (!req.headers.authorization) {
+		return res.status(403).send({ message: 'You do not have authorization' })
+	}
 
-  const token = req.headers.authorization.split(' ')[1]
+	const token = req.headers.authorization.split(' ')[1]
 
-  services.decodeToken(token)
-    .then(response => {
-      req.user = response
-      next()
-    })
-    .catch(response => {
-      res.status(response.status)
-    })
+	services.decodeToken(token)
+		.then(response => {
+			req.user = response
+			next()
+		})
+		.catch(response => {
+			res.status(response.status)
+		})
 }
