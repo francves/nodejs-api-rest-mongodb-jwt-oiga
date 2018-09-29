@@ -1,0 +1,15 @@
+{
+	"_id" : ObjectId("5baedd3a5cd7351c904eb8e0"),
+	"name" : "Milk",
+	"price" : "1000"
+},
+{
+	"_id" : ObjectId("5baedda35cd7351c904eb8e3"),
+	"name" : "Apple",
+	"price" : "2011"
+},
+{
+	"_id" : ObjectId("5baeddb35cd7351c904eb8e4"),
+	"name" : "Cheese",
+	"price" : "5400"
+},

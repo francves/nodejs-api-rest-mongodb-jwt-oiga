@@ -1,0 +1,40 @@
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed1e2f782f60e309f2ae4"),
+	"createdAt" : ISODate("2018-09-28T21:14:10.627-04:00"),
+	"productId" : "Product4245009",
+	"quantity" : 544,
+	"totalAmount" : 7285,
+	"updatedAt" : ISODate("2018-09-28T21:14:10.627-04:00"),
+	"userId" : "User5838017"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed28b5426521a70f1eb9e"),
+	"createdAt" : ISODate("2018-09-28T21:16:59.266-04:00"),
+	"productId" : "Product513794",
+	"quantity" : 871,
+	"totalAmount" : 821,
+	"updatedAt" : ISODate("2018-09-28T21:16:59.266-04:00"),
+	"userId" : "User3930277"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed3b808141a05f45afac0"),
+	"createdAt" : ISODate("2018-09-28T21:22:00.115-04:00"),
+	"productId" : "Product1210679",
+	"quantity" : 558,
+	"totalAmount" : 8980,
+	"updatedAt" : ISODate("2018-09-28T21:22:00.184-04:00"),
+	"userId" : "User3177080"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baee0f50940e51790120d5a"),
+	"createdAt" : ISODate("2018-09-28T22:18:29.238-04:00"),
+	"productId" : "Product7047970",
+	"quantity" : 500,
+	"totalAmount" : 9212,
+	"updatedAt" : ISODate("2018-09-28T22:18:29.238-04:00"),
+	"userId" : "User6466450"
+},

@@ -1,0 +1,104 @@
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baecfb32bd69f130457dda6"),
+	"email" : "test9398439@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran706594"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed1e1f782f60e309f2ae2"),
+	"email" : "test3708728@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran8031342"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed2895426521a70f1eb9c"),
+	"email" : "test8990182@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran5399543"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed3b508141a05f45afabe"),
+	"email" : "test1376036@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran5359593"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed432b6bca00b4092e92c"),
+	"email" : "test2953805@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran4700147"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed4ab21c21a1af4d9ae43"),
+	"email" : "test4463402@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran472287"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed504590ea918bcd660e1"),
+	"email" : "test8360136@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran4341982"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed889c9e3cc1d58a27f6c"),
+	"email" : "test1326652@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran8336115"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baed9645f941d193016cff5"),
+	"email" : "test9049162@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran9584647"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baeda3b0940e51790120d54"),
+	"email" : "test3478341@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran2782116"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baedbb40940e51790120d57"),
+	"email" : "prueba1@prueba.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baedbe90940e51790120d58"),
+	"email" : "prueba@prueba.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "francisco"
+},
+{
+	"__v" : 0,
+	"_id" : ObjectId("5baee2c80940e51790120d5b"),
+	"email" : "test207294@test.com",
+	"password" : "123456",
+	"role" : "0",
+	"username" : "fran9371718"
+},
